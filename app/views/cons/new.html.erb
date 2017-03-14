@@ -1,53 +1,53 @@
-<h1>Welcome to Guess Con's Age!</h1>
+<h1>Welcome to <br> Guess Conrad's Age!</h1>
 <%= form_for @con do |c| %>
-
-	<div>
-		<%= c.label :name %>
+<div class = "col-lg-12 col-xs-12 well" align = "center">
+	<div class = "field">
+		<%= c.label :name, label = "Username" %>
 		<%= c.text_field :name %>
 	</div>
-	<div>
-		<%= c.label :age0 %>
+	<div class = "field">
+		<%= c.label :age0, label = "Picture1" %>
 		<%= c.text_field :age0 %>
 	</div>
-	<div>
-		<%= c.label :age1 %>
+	<div class = "field">
+		<%= c.label :age1, label = "Picture2" %>
 		<%= c.text_field :age1 %>
 	</div>
-	<div>
-		<%= c.label :age2 %>
+	<div class = "field">
+		<%= c.label :age2, label = "Picture3" %>
 		<%= c.text_field :age2 %>
 	</div>
-	<div>
-		<%= c.label :age3 %>
+	<div class = "field">
+		<%= c.label :age3, label = "Picture4" %>
 		<%= c.text_field :age3 %>
 	</div>
-	<div>
-		<%= c.label :age4 %>
+	<div class = "field">
+		<%= c.label :age4, label = "Picture5" %>
 		<%= c.text_field :age4 %>
 	</div>
-	<div>
-		<%= c.label :age5 %>
+	<div class = "field">
+		<%= c.label :age5, label = "Picture6" %>
 		<%= c.text_field :age5 %>
 	</div>
-	<div>
-		<%= c.label :age6 %>
+	<div class = "field">
+		<%= c.label :age6, label = "Picture7" %>
 		<%= c.text_field :age6 %>
 	</div>
-	<div>
-		<%= c.label :age7 %>
+	<div class = "field">
+		<%= c.label :age7, label = "Picture8" %>
 		<%= c.text_field :age7 %>
 	</div>
-	<div>
-		<%= c.label :age8 %>
+	<div class = "field">
+		<%= c.label :age8, label = "Picture9" %>
 		<%= c.text_field :age8 %>
 	</div>
-	<div>
-		<%= c.label :age9 %>
+	<div class = "field">
+		<%= c.label :age9, label = "Picture10" %>
 		<%= c.text_field :age9 %>
 	</div>
-	<div>
+	<div class = "field">
 		<%= c.submit %>
 	</div>
-
+</div>
 
 <% end %>

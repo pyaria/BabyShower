@@ -1,31 +1,37 @@
-<h1>Guess the Ingredients!</h1>
+<h1>Guess what's in the Baby Food!</h1>
 
 <%= form_for @food do |f| %>
-	<div>
-		<%= f.label :name %>
-		<%= f.text_field :name %>
-	</div>
-	<div>
-		<%= f.label :guess1a %>
-		<%= f.text_field :guess1a %>
-		<%= f.text_field :guess1b %>
-		<%= f.text_field :guess1c %>
-	</div>
-	<div>
-		<%= f.label :guess2a %>
-		<%= f.text_field :guess2a %>
-		<%= f.text_field :guess2b %>
-		<%= f.text_field :guess2c %>
-	</div>
-	<div>
-		<%= f.label :guess3 %>
-		<%= f.text_field :guess3a %>
-		<%= f.text_field :guess3b %>
-		<%= f.text_field :guess3c %>
-	</div>
+	<div >
+		<div class = "field">
+			<%= f.label :name, label = "Username" %>
+			<%= f.text_field :name %>
+		</div>
+		<div class = "field">
+			<%= f.label :guess1a, label = "Guess 1" %>
+			<%= f.text_field :guess1a %>
+			</div>
+			<div class = "field">
+			<%= f.text_field :guess1b %>
+			</div>
+			<div class = "field">
+			<%= f.text_field :guess1c %>
+		</div>
+		<div class = "field">
+			<%= f.label :guess2a, label = "Guess 2" %>
+			<%= f.text_field :guess2a %>
+			<%= f.text_field :guess2b %>
+			<%= f.text_field :guess2c %>
+		</div>
+		<div class = "field">
+			<%= f.label :guess3a, label = "Guess 3" %>
+			<%= f.text_field :guess3a %>
+			<%= f.text_field :guess3b %>
+			<%= f.text_field :guess3c %>
+		</div>
 
-	<div>
-		<%= f.submit %>
+		<div class = "field">
+			<%= f.submit %>
+		</div>
 	</div>
 
 <% end %>

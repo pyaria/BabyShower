@@ -1,17 +1,17 @@
-<h1>What do you think Annabelle will look like?</h1>
+<h1>Show us <br>who you think <br>Annabelle will look like!</h1>
 
-<div>
+<div class = "">
 	<%= form_for @face do |f| %>
+		<div class = "field">
+			<%= f.label :name %>
+			<%= f.text_field :name %>
+		</div>
+		<div class = "field">
+			<%= f.label :baby %>
+			<%= f.file_field :pic %>
+		</div>
+		<div class = "field">
+			<%= f.submit %>
+		</div>
+	<% end %>
 </div>
-<div>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
-</div>
-<div>
-	<%= f.label :baby %>
-	<%= f.file_field :pic %>
-</div>
-<div>
-	<%= f.submit %>
-</div>
-<% end %>
