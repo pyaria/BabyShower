@@ -1,0 +1,31 @@
+<h1>Guess the Ingredients!</h1>
+
+<%= form_for @food do |f| %>
+	<div>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<div>
+		<%= f.label :guess1a %>
+		<%= f.text_field :guess1a %>
+		<%= f.text_field :guess1b %>
+		<%= f.text_field :guess1c %>
+	</div>
+	<div>
+		<%= f.label :guess2a %>
+		<%= f.text_field :guess2a %>
+		<%= f.text_field :guess2b %>
+		<%= f.text_field :guess2c %>
+	</div>
+	<div>
+		<%= f.label :guess3 %>
+		<%= f.text_field :guess3a %>
+		<%= f.text_field :guess3b %>
+		<%= f.text_field :guess3c %>
+	</div>
+
+	<div>
+		<%= f.submit %>
+	</div>
+
+<% end %>
