@@ -10,10 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170315030507) do
+ActiveRecord::Schema.define(version: 20170315030509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cons", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "age0"
+    t.integer  "age1"
+    t.integer  "age2"
+    t.integer  "age3"
+    t.integer  "age4"
+    t.integer  "age5"
+    t.integer  "age6"
+    t.integer  "age7"
+    t.integer  "age8"
+    t.integer  "age9"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "faces", force: :cascade do |t|
     t.string   "name"
@@ -33,6 +49,22 @@ ActiveRecord::Schema.define(version: 20170315030507) do
     t.string   "guess3a"
     t.string   "guess3b"
     t.string   "guess3c"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "nats", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "age0"
+    t.integer  "age1"
+    t.integer  "age2"
+    t.integer  "age3"
+    t.integer  "age4"
+    t.integer  "age5"
+    t.integer  "age6"
+    t.integer  "age7"
+    t.integer  "age8"
+    t.integer  "age9"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
