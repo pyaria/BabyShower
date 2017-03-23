@@ -1,5 +1,18 @@
 <h1>Pictures of the Baby Shower</h1>
 
-<% @faces.each do |f| %>
- <%= image_tag f %>
-<% end %>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  	<%= GetCarouselDivs(@faces) %>
+  </div>
+</div>
+
+<script>
+// Load this when the DOM is ready
+$(function(){
+  $('#myCarousel').carousel();
+});
+$('#myCarousel').carousel();
+
+</script>
