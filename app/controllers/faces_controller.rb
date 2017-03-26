@@ -5,6 +5,7 @@ class FacesController < ApplicationController
 	end
 	def create
 		@face = Face.new face_params
+		# @face.pic = params[:pic]
 		@face.save
 		render :index
 	end

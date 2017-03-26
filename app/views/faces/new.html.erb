@@ -1,9 +1,9 @@
 <h1>Show us <br>who you think <br>Annabelle will look like!</h1>
 
-<div class = "">
+<div class = "col-xs-12 col-lg-2 col-md-6">
 	<%= form_for @face do |f| %>
 		<div class = "field">
-			<%= f.label :name %>
+			<%= f.label :name, label = "Your Name:" %>
 			<%= f.text_field :name %>
 		</div>
 		<div class = "field">
