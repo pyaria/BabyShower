@@ -1,0 +1,23 @@
+<body>
+    <div class="container">
+      
+      <h1>Show us <br>who you think <br>Annabelle will look like!</h1>
+
+<div class="col-xs-12 col-lg-2 col-md-6">
+	<form class="new_face" id="new_face" enctype="multipart/form-data" action="/faces" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="0axv4PKVaQ7ixCw0Xatb6Hvr+gH2EK9nJiXonzeuSIhz7QSlrFVfLeYsItlUAqCXADwyLUz+p8JK0eU7WrvbbQ==">
+		<div class="field">
+			<label for="face_name">Your Name:</label>
+			<input type="text" name="face[name]" id="face_name">
+		</div>
+		<div class="field">
+			<label for="face_baby">Baby</label>
+			<input type="file" name="face[pic]" id="face_pic">
+		</div>
+		<div class="field">
+			<input type="submit" name="commit" value="Create Face" data-disable-with="Create Face">
+		</div>
+</form></div>
+    </div>
+  
+
+</body>
