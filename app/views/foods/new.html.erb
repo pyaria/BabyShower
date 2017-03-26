@@ -3,32 +3,209 @@
 <%= form_for @food do |f| %>
 	<div >
 		<div class = "field">
-			<%= f.label :name, label = "Username" %>
+			<%= f.label :name, label = "Your Name: " %>
 			<%= f.text_field :name %>
 		</div>
 		<div class = "field">
-			<%= f.label :guess1a, label = "Guess 1" %>
-			<%= f.text_field :guess1a %>
+			<%= f.label :guess1a, label = "Jar 1" %>
+			<%= f.select :guess1a, Ingredients:["Acorn Squash", "Agar", "Apple", 
+											  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+											  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+												"Hemp Hearts",
+												"Kombucha",
+												"Oatmeal",
+												"Pear", 
+												"Quinoa", 
+												"Spinach", "Sweet Potato", 
+												"Tofu",
+												"Yam"] %>
+			<div class = "indentGuess">
+				<%= f.select :guess1b, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
 			</div>
-			<div class = "field">
-			<%= f.text_field :guess1b %>
-			</div>
-			<div class = "field">
-			<%= f.text_field :guess1c %>
 		</div>
 		<div class = "field">
-			<%= f.label :guess2a, label = "Guess 2" %>
-			<%= f.text_field :guess2a %>
-			<%= f.text_field :guess2b %>
-			<%= f.text_field :guess2c %>
+			<%= f.label :guess2a, label = "Jar 2" %>
+			<%= f.select :guess2a, Ingredients:["Acorn Squash", "Agar", "Apple", 
+											  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+											  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+												"Hemp Hearts",
+												"Kombucha",
+												"Oatmeal",
+												"Pear", 
+												"Quinoa", 
+												"Spinach", "Sweet Potato", 
+												"Tofu",
+												"Yam"] %>
+			<div class = "indentGuess">
+				<%= f.select :guess2b, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
+			<div class = "indentGuess">
+				<%= f.select :guess2c, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
+			<div class = "indentGuess">
+				<%= f.select :guess2d, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
 		</div>
 		<div class = "field">
-			<%= f.label :guess3a, label = "Guess 3" %>
-			<%= f.text_field :guess3a %>
-			<%= f.text_field :guess3b %>
-			<%= f.text_field :guess3c %>
+			<%= f.label :guess3a, label = "Jar 3" %>
+			<%= f.select :guess3a, Ingredients:["Acorn Squash", "Agar", "Apple", 
+											  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+											  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn",
+												"Hemp Hearts",
+												"Kombucha",
+												"Oatmeal",
+												"Pear", 
+												"Quinoa", 
+												"Spinach", "Sweet Potato", 
+												"Tofu",
+												"Yam"] %>
+				<div class = "indentGuess">
+				<%= f.select :guess3b, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
+			<div class = "indentGuess">
+				<%= f.select :guess3c, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
+			<div class = "indentGuess">
+				<%= f.select :guess3d, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
 		</div>
-
+		<div class = "field">
+			<%= f.label :guess4a, label = "Jar 4" %>
+			<%= f.select :guess4a, Ingredients:["Acorn Squash", "Agar", "Apple", 
+											  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+											  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+												"Hemp Hearts",
+												"Kombucha",
+												"Oatmeal",
+												"Pear", 
+												"Quinoa", 
+												"Spinach", "Sweet Potato", 
+												"Tofu",
+												"Yam"] %>
+			<div class = "indentGuess">	
+				<%= f.select :guess4b, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
+			<div class = "indentGuess">
+				<%= f.select :guess4c, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>	
+			</div>
+		</div>
+		<div class = "field">
+			<%= f.label :guess5a, label = "Jar 5" %>
+			<%= f.select :guess5a, Ingredients:["Acorn Squash", "Agar", "Apple", 
+											  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+											  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+												"Hemp Hearts",
+												"Kombucha",
+												"Oatmeal",
+												"Pear", 
+												"Quinoa", 
+												"Spinach", "Sweet Potato", 
+												"Tofu",
+												"Yam"] %>
+			<div class = "indentGuess">
+				<%= f.select :guess5b, Ingredients:["Acorn Squash", "Agar", "Apple", 
+												  	"Banana", "Beet", "Blueberries", "Butternut Squash", 
+												  	"Carrot", "Chia Seeds", "Chickpea", "Chocolate", "Corn", 
+													"Hemp Hearts",
+													"Kombucha",
+													"Oatmeal",
+													"Pear", 
+													"Quinoa", 
+													"Spinach", "Sweet Potato", 
+													"Tofu",
+													"Yam"] %>
+			</div>
+		</div>
 		<div class = "field">
 			<%= f.submit %>
 		</div>
