@@ -31,11 +31,13 @@ html,body{background:#390059;font-family:Verdana,sans-serif;font-size:15px;line-
 h1,h2,h3,h4,h5,h6,.w3-slim,.w3-wide{font-family:"Segoe UI",Arial,sans-serif}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:"Times New Roman",Times,serif}
-h1,h2,h3,h4,h5,h6{font-weight:400;margin:10px 0;padding-left:30%}.w3-wide{letter-spacing:4px}
+h1,h2,h3,h4,h5{font-weight:400;margin:10px 0;padding-left:30%}.w3-wide{letter-spacing:4px}
+h6{padding-left:10%; margin:0px;}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-weight:inherit}
 hr{color:yellow;border:0;border-top:1px solid #eee;margin:5px 0}
 img{margin-bottom:-5px}a{color:inherit}
 p{margin-top:0px; margin-bottom:0px;}
+.field{color:white;}
 .w3-image{max-width:100%;height:auto}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
 .w3-table-all{border:1px solid #ccc}
@@ -125,10 +127,15 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-topnav:after,.w3-topnav:before,.w3-clear:after,.w3-clear:before,.w3-btn-group:before,.w3-btn-group:after,.w3-btn-bar:before,.w3-btn-bar:after,.w3-bar:before,.w3-bar:after
 {content:"";display:table;clear:both}
 .w3-col,.w3-half,.w3-third,.w3-twothird,.w3-threequarter,.w3-quarter{float:left;width:100%}
+.w3-col-back{float:left; padding-right: 10%;
+  
+  left: 0; right: 0;
+  }
+.w3-col-submit{float:right; flex:1; }
 .w3-col.s1{width:8.33333%}
 .w3-col.s2{width:16.66666%}
 .w3-col.s3{/*width:24.99999%*/}
-.w3-col.s4{width:33.33333%}
+.w3-col.s4{padding:15px;/*width:33.33333%*/}
 .w3-col.s5{width:41.66666%}
 .w3-col.s6{width:49.99999%}
 .w3-col.s7{width:58.33333%}
