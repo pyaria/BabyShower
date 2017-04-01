@@ -131,12 +131,42 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
   
   left: 0; right: 0;
   }
+.indentGuess{padding:15px;}
 .w3-col-submit{float:right; flex:1; }
+.file {
+  position: relative;
+  /*height: 30px;
+  width: 150px;*/
+}
+
+.file > input[type="file"] {
+  /*position: absoulte;*/
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0
+}
+
+.file > label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #9AB;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer
+}
+
 .w3-col.s1{width:8.33333%}
 .w3-col.s2{width:16.66666%}
 .w3-col.s3{/*width:24.99999%*/}
 .w3-col.s4{padding:15px;/*width:33.33333%*/}
-.w3-col.s5{width:41.66666%}
+.w3-col.s5{padding-left:30%; padding-top: 20px; /*width:41.66666%*/}
 .w3-col.s6{width:49.99999%}
 .w3-col.s7{width:58.33333%}
 .w3-col.s8{width:66.66666%}

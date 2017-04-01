@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<!--<link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />-->
+<script class="jsbin" src="jquery.min.js"></script>
+<script class="jsbin" src="jquery-ui.min.js"></script>
+
+<script>function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#preview_baby')
+                    .attr('src', e.target.result)
+                    .width(150)
+                    .height(200);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+<script>
+function myFunction() {
+    location.reload();
+}
+</script>
+
+<title>Baby Faces</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset=utf-8 >
+<link rel="stylesheet" href="../home/mobile.css"> 
+
+
+<body style="max-width:600px">
+   
+<header class="w3-bar w3-theme">
+  <button class="<!--w3-bar-item--> w3-button w3-xlarge" onclick="history.go(-1)">&#8630; Back</button>
+  
+  <!--<h1 class="w3-bar-item2 w3-text-white">Baby Faces</h1>-->
+</header>
+
+<div class="w3-row" style="background:#FD008F;">
+  <div class="w3-col s3">
+    
+      <img class="w3-circle"  src="../home/babyfaces.jpg" style="width:50%">
+	
+  </div>
+  <div class="w3-col s9 w3-container">
+    <h3 class="w3-text-white">Baby Faces</h3>
+    <p class="w3-text-white">Put together a ridiculous face.</p>
+	<hr>
+  </div>
+
+
+    <div class="w3-container">
+      
+      <!--<h1>Show us <br>who you think <br>Annabelle will look like!</h1> -->
+
+<div class="w3-row">
+	<form class="new_face" id="new_face" enctype="multipart/form-data" action="/faces" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="0axv4PKVaQ7ixCw0Xatb6Hvr+gH2EK9nJiXonzeuSIhz7QSlrFVfLeYsItlUAqCXADwyLUz+p8JK0eU7WrvbbQ==">
+		<div class="w3-col s4 field">
+			<label for="face_name">Your Name:</label>
+			<input type="text" name="face[name]" id="face_name">
+		</div>
+		
+		<!-- Find file for baby face -->
+		<div class="w3-col s4 field file">
+			<label for="face_baby">Tap Here to Load The Baby Face</label>
+			<input type="file" name="face[pic]" id="face_baby" onchange="readURL(this);">
+			
+		</div>
+		<div class="w3-col s5 field">
+			<div class="w3-row">
+		<img class="w3-row" id="preview_baby" src="#" />
+				</div>
+				</div>
+				<!--alt="Their baby will look like this?!" -->
+				<!-- SUBMIT BUTTONS -->
+		<div class="w3-col s4 field">
+			<div class="w3-row">
+				<div class="w3-col-back">
+					<input type="button" name="erase" value="Erase Baby" onclick="history.go(0)" data-disable-with="Go Back">
+				</div>
+				<div class="w3-col-submit">
+					<input type="submit" name="commit" value="Make A Baby!" data-disable-with="Create Face">
+				</div>
+			</div>
+		</div>
+		<!-- END SUBMIT BUTTONS -->
+		
+    
+	</form>
+		</div>
+		
+</div>
+  
+
+</body>
