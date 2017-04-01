@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<title>Conrad's Age</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../home/mobile.css">
+
+
+<body style="max-width:600px">
+   
+<header class="w3-bar w3-theme">
+  <button class="<!--w3-bar-item--> w3-button w3-xlarge" onclick="history.go(-1)">&#8630; Back</button>
+  
+  <!--<h1 class="w3-bar-item2 w3-text-white">Guess Conrad's Age!</h1>-->
+</header>
+
+<div class="w3-row" style="background:orange;">
+  <div class="w3-col s3">
+    
+      <img class="w3-circle"  src="../home/consage.jpg" style="width:50%">
+	
+  </div>
+  <div class="w3-col s9 w3-container">
+    <h3 class="w3-text-white">Conrad's Age</h3>
+    <p class="w3-text-white">Guess his age.</p>
+	<hr>
+  </div>
+
+<div class="w3-container">
+      
+      <!--<h1>Guess Conrad's Age!</h1>   original code commented out-->
+	  
+	  
+<form class="new_con" id="new_con" action="/cons" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="2Du80sqmPy0e9dzyiUoBjpr/AnXweF0M+22vCZpF6l56eteXlGYJDhod0h+A4/rx4SjKWUqWVamXmaKt91B5uw==">
+	<div class="w3-row">
+		<div class="w3-col s4 field">
+			<label for="con_name">Your Name: </label>
+			<input type="text" name="con[name]" id="con_name">
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age0">Picture 1:</label>
+			<!--<input type="text" name="con[age0]" id="con_age0">-->
+			<select name="con[age0]" id="con_age0">
+				<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age0">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age1">Picture 2:</label>
+
+			<select name="con[age1]" id="con_age1">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age1">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age2">Picture 3:</label>
+			<select name="con[age2]" id="con_age2">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age2">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age3">Picture 4:</label>
+			<select name="con[age3]" id="con_age3">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age3">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age4">Picture 5:</label>
+			<select name="con[age4]" id="con_age4">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age4">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age5">Picture 6:</label>
+			<select name="con[age5]" id="con_age5">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age5">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age6">Picture 7:</label>
+			<select name="con[age6]" id="con_age6">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age6">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age7">Picture 8:</label>
+			<select name="con[age7]" id="con_age7">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age7">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age8">Picture 9:</label>
+			<select name="con[age8]" id="con_age8">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age8">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<label for="con_age9">Picture 10:</label>
+			<select name="con[age9]" id="con_age9">
+			<optgroup label="Ages">
+					<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option>
+				</optgroup>
+			</select>
+			<label for="con_age9">Years</label>
+		</div>
+		<div class="w3-col s4 field">
+			<div class="w3-row">
+				<div class="w3-col-back">
+					<input type="submit" name="goBack" value="Back" onclick="history.go(-1)" data-disable-with="Go Back">
+				</div>
+				<div class="w3-col-submit">
+					<input type="submit" name="commit" value="Submit Answers" data-disable-with="Create Con">
+				</div>
+			</div>
+		</div>
+	</div>
+
+</form>
+ </div>
+  
+
+</body>
+
